@@ -25,13 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
             link.style.color = '#ffa4eb';
         });
     });
-    const titles = ["sennix world", "seNniXXX w0Rld", "S3nn1x w0r1d", "s3нникс ворлд", "010010 world", "get it?", "yeah thats my name"];
+    const titles = ["sennix world", "seNniXXX w0Rld", "S3nn1x w0r1d", "s3нникс ворлд"];
         let currentTitleIndex = 0;
         function changeTitle(){
             document.title = titles[currentTitleIndex]
             currentTitleIndex = (currentTitleIndex + 1) % titles.length;
         }
-        setInterval(changeTitle, 5)
+        setInterval(changeTitle, 50)
 
     playPauseBtn.addEventListener('click', function() {
         if (audio.paused) {
@@ -56,4 +56,5 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     audio.volume = 0.25; 
 });
+
 
