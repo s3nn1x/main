@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.title = titles[currentTitleIndex]
             currentTitleIndex = (currentTitleIndex + 1) % titles.length;
         }
-        setInterval(changeTitle, 500)
+        setInterval(changeTitle, 5)
 
     playPauseBtn.addEventListener('click', function() {
         if (audio.paused) {
@@ -56,3 +56,4 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     audio.volume = 0.25; 
 });
+
